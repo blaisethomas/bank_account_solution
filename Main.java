@@ -23,6 +23,8 @@ public class Main {
 //        the 3rd should save all fields
 //        create getters
 
-
+        VipAccount blaiseVip = new VipAccount();
+        VipAccount graemeVip = new VipAccount("Graeme", 100000.0, "graeme@email.com");
+        VipAccount twoParams = new VipAccount("Testing", "email@lksdjf.com");
     }
 }
