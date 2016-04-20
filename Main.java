@@ -15,6 +15,7 @@ public class Main {
         System.out.println("balance : " + blaise.getBalance());
         blaise.deposit(68.49);
         blaise.withdraw(151.00);
+        blaise.withdraw(351.0);
 
 //        create a new class VipCustomer
 //        it should have 3 fields; name, creditLimit and email
@@ -23,8 +24,14 @@ public class Main {
 //        the 3rd should save all fields
 //        create getters
 
-        VipAccount blaiseVip = new VipAccount();
-        VipAccount graemeVip = new VipAccount("Graeme", 100000.0, "graeme@email.com");
-        VipAccount twoParams = new VipAccount("Testing", "email@lksdjf.com");
+//        Refactor your code so that VipAccount extends BankAccount
+//        Override the withdraw method so that the credit line is available
+//        Refactor the constructors
+
+        VipAccount blaiseVip = new VipAccount(234, 100.0, "Blaise", "email", "3109992922");
+        blaiseVip.withdraw(500);
+        blaiseVip.withdraw(500);
+        blaiseVip.withdraw(500);
+
     }
 }
