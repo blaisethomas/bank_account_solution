@@ -22,6 +22,10 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    public BankAccount(){
+        this(12345, 0.0, "no name", "no email", "no phone");
+    }
+
     public int getNumber() {
         return number;
     }
